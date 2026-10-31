@@ -7,7 +7,7 @@ import recipeRoutes from "./routes/recipe.js";
 const app = express();
 app.use(
   cors({
-    origin: FRONTEND_URL,
+    origin: process.env.FRONTEND_URL,
   }),
 );
 app.use(express.json());
